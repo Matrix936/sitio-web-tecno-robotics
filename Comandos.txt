@@ -1,0 +1,126 @@
+# 🧠 Guía rápida de comandos Git para el proyecto – Tecno Robotics
+
+Este archivo contiene los comandos Git esenciales para trabajar con ramas, subir cambios, fusionar ramas y 
++mantener tu proyecto sincronizado con GitHub y Vercel.  
+Puedes consultarlo cuando quieras subir actualizaciones o hacer pruebas sin afectar la rama principal (`main`).
+
+---
+
+## 🔧 Inicializar un nuevo repositorio y subirlo a GitHub
+
+```bash
+# Inicia el repositorio local
+git init
+
+# Agrega todos los archivos al área de preparación
+git add .
+
+# Crea el primer commit con un mensaje
+git commit -m "Primer commit"
+
+# Cambia el nombre de la rama a 'main'
+git branch -M main
+
+# Conecta el repositorio local con el remoto (reemplaza con tu URL)
+git remote add origin https://github.com/TU_USUARIO/tu-repo.git
+
+# Sube el proyecto al repositorio remoto
+git push -u origin main
+
+
+
+# Crea una nueva rama y te cambia a ella
+git checkout -b nombre-de-la-rama
+
+Ejemplo: git checkout -b pruebas-diseño
+
+
+# Cambia a otra rama que ya existe
+git checkout nombre-de-la-rama
+
+Ejemplo: git checkout main
+
+
+
+
+💾 Guardar cambios y subirlos al repositorio
+
+# Agrega todos los archivos modificados
+git add .
+
+# Crea un commit con un mensaje claro
+git commit -m "Descripción breve de los cambios"
+
+# Sube los cambios a la rama correspondiente
+git push origin nombre-de-la-rama
+
+Ejemplo: 
+git commit -m "Sección de contacto actualizada"
+git push origin pruebas-diseño
+
+
+
+
+
+📥 Descargar cambios desde el repositorio remoto
+bash
+Copiar
+Editar
+# Trae los últimos cambios desde GitHub
+git pull origin nombre-de-la-rama
+Ejemplo:
+
+bash
+Copiar
+Editar
+git pull origin main
+
+
+
+
+🔀 Fusionar una rama de pruebas con la rama principal
+bash
+Copiar
+Editar
+# Cambia a la rama principal
+git checkout main
+
+# Asegúrate de tener los últimos cambios de main
+git pull origin main
+
+# Fusiona los cambios desde otra rama
+git merge nombre-de-la-rama
+
+# Sube la versión fusionada al repositorio
+git push origin main
+Ejemplo:
+
+bash
+Copiar
+Editar
+git checkout main
+git pull origin main
+git merge pruebas-diseño
+git push origin main
+
+✅ Recomendación: trabaja en ramas distintas para cada mejora o prueba. Solo fusiona a main cuando estés seguro. 
+Así, tu sitio en producción (Vercel) siempre estará estable.
+
+
+
+🧽 Eliminar una rama local y/o remota
+bash
+Copiar
+Editar
+# Elimina una rama local que ya no necesites
+git branch -d nombre-de-la-rama
+
+# Elimina una rama remota en GitHub
+git push origin --delete nombre-de-la-rama
+Ejemplo:
+
+bash
+Copiar
+Editar
+git branch -d pruebas-diseño
+git push origin --delete pruebas-diseño
