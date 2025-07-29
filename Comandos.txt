@@ -1,3 +1,28 @@
+Principales
+# Cambiar a la rama main
+git checkout main
+
+# Traer los últimos cambios del repositorio remoto, por si hay algo nuevo
+git pull origin main
+
+# (Opcional) Fusionar tu rama actual a main (si estuviste trabajando en otra rama)
+git merge nombre-de-tu-rama
+
+# Subir los cambios locales a la rama main en GitHub
+git push origin main
+
+
+
+Si ya estás en main y trabajaste directamente allí, solo necesitas esto:
+
+git add .
+git commit -m "Tu mensaje describiendo los cambios"
+git push origin main
+
+
+
+
+
 # 🧠 Guía rápida de comandos Git para el proyecto – Tecno Robotics
 
 Este archivo contiene los comandos Git esenciales para trabajar con ramas, subir cambios, fusionar ramas y 
