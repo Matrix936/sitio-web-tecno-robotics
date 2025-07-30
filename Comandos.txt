@@ -164,3 +164,34 @@ Copiar
 Editar
 git branch -d pruebas-diseño
 git push origin --delete pruebas-diseño
+
+
+
+
+
+SI LLEGO A CERRAR EL SOFTWARE
+
+# 1. Abre Visual Studio Code
+# Puedes hacerlo desde el menú o con el acceso directo.
+
+# 2. Abre la carpeta del proyecto
+# En VS Code, ve a:
+# Archivo → Abrir carpeta (o "File → Open Folder") 
+# y selecciona la carpeta donde clonaste tu repositorio.
+
+# 3. Abre la terminal integrada en VS Code
+# Usa el atajo: Ctrl + ñ (o Ctrl + `) 
+# o ve al menú: Terminal → Nueva Terminal
+
+# 4. Verifica en qué rama estás
+git branch
+
+# 5. (Opcional) Cambia a la rama donde quieres trabajar
+git checkout nombre-de-la-rama
+
+# 6. (Opcional) Trae los últimos cambios del repositorio remoto (si alguien más subió algo o trabajaste desde otra compu)
+git pull origin nombre-de-la-rama
+
+
+#7 Echar a andar el proyecto
+npm run dev
