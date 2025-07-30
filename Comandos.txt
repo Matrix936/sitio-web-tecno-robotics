@@ -21,6 +21,21 @@ git push origin main
 
 
 
+General:
+
+git checkout main
+
+git add .
+git commit -m "Tu mensaje describiendo los cambios"
+git push origin main
+
+git checkout feature/pruebas
+
+git add .
+git commit -m "Tu mensaje describiendo los cambios"
+git push origin main
+
+
 
 
 # 🧠 Guía rápida de comandos Git para el proyecto – Tecno Robotics
